@@ -8,7 +8,15 @@ module.exports = {
         port: process.env.MYSQLDB_PORT,
         user: process.env.MYSQLDB_USER,
         password: process.env.MYSQLDB_ROOT_PASSWORD,
-        database: process.env.MYSQLDB_DATABASE
+        database: process.env.MYSQLDB_DATABASE,
+    },
+    SEQUELIZE:{
+        host: process.env.MYSQLDB_HOST,
+        port: process.env.MYSQLDB_PORT,
+        username: process.env.MYSQLDB_USER,
+        password: process.env.MYSQLDB_ROOT_PASSWORD,
+        database: process.env.MYSQLDB_DATABASE,
+        dialect:"mysql"
     },
     "ABI": [
         {
@@ -131,7 +139,7 @@ module.exports = {
                         }
                     ],
                     "indexed": false,
-                    "internalType": "struct ISSVNetwork.Oess[]",
+                    "internalType": "struct ISafeStakeNetwork.Oess[]",
                     "name": "oessList",
                     "type": "tuple[]"
                 }
@@ -197,7 +205,7 @@ module.exports = {
                         }
                     ],
                     "indexed": false,
-                    "internalType": "struct ISSVNetwork.Oess[]",
+                    "internalType": "struct ISafeStakeNetwork.Oess[]",
                     "name": "oessList",
                     "type": "tuple[]"
                 }

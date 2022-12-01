@@ -1,7 +1,5 @@
 FROM node:14
-
-WORKDIR /safestake-server
-COPY package.json .
+COPY . /app
+WORKDIR /app
 RUN npm install
-COPY . .
 CMD node index.js
